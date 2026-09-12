@@ -16,7 +16,7 @@ if not st.session_state.authorized:
     pwd = st.text_input("접근 암호를 입력하세요", type="password")
     if st.button("접속 (Login)"):
         # 실무자들끼리 공유할 비밀번호를 아래에 설정하세요.
-        if pwd == "인사7150!":  
+        if pwd == "dlstk7150!":  
             st.session_state.authorized = True
             st.rerun() # 정답이면 화면을 새로고침하여 본 프로그램을 띄움
         else:
